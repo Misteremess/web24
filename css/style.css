@@ -1,0 +1,406 @@
+body {
+    margin: 0;
+    background-image: url("../img/fondo.png");
+    background-attachment: fixed;
+    background-position: center;
+}
+
+* {
+    box-sizing: border-box;
+    color: rgb(18, 0, 110);
+}
+
+/* For desktop: */
+.container {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 90%;
+    margin: 0 auto;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+}
+/* For desktop: */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    .row {
+        flex-wrap: wrap;
+    }
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* For desktop: */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+/* For mobile: */
+@media only screen and (max-width: 1000px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+/* For desktop: */
+[class*="col-"] {
+    padding: 15px;
+}
+
+.shadow {
+    box-shadow: 0 20px 20px gainsboro;
+    border-radius: 10px;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding: 10px;
+    font-size: 20px;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    nav li {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+    nav ul {
+        background-color: rgb(243, 251, 254);
+    }
+}
+
+nav li a {
+    color: rgb(18, 0, 110);
+}
+
+nav li:hover {
+    background-color:  rgb(225, 245, 253);
+}
+
+.text-right{
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+.text-center {
+    text-align: center;
+}
+.py-3 {
+    padding: 16px 0;
+}
+.px-3 {
+    padding: 0 16px;
+}
+.p-3 {
+    padding: 16px;
+}
+
+.bg-azul-o {
+    background-color: rgb(0 157 222);
+}
+.bg-azul-c {
+    background-color: rgb(240, 249, 252);
+}
+.bg-orange {
+    background-color: orange;
+}
+.text-white {
+    color: white;
+}
+.text-red {
+    color: red;
+    font-size: 30px;
+    background-color: cyan;
+}
+footer h1 {
+    border-bottom-left-radius: 10px;
+}
+footer h1 {
+    border-bottom-right-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+#btnmenu {
+    font-size: 40px;
+    display: none;
+}
+/* For mobile: */
+@media screen and (max-width: 1000px) {
+    #btnmenu {
+        display: inline;
+    }
+    #menu{
+        display: none;
+    }
+}
+@media screen and (max-width: 1600px) and (min-width: 1000px)  {
+    #menu{
+        display: block;
+    }
+}
+.etiqueta {
+    color: red;
+    font-size: 28px;
+    font-weight: bold;
+}
+.atributo {
+    color: green;
+    font-size: 28px;
+    font-weight: bold;
+}
+#enlaces a {
+    color: blue;
+    text-decoration: underline;
+}
+.logorenfe {
+    width: 200px;
+    height: auto;
+}
+.customdes li {
+    list-style-type: circle;
+}
+.customdes li li {
+    list-style-type: square;
+}
+.customdes li li li {
+    list-style-type: disc;
+}
+.customord li {
+    list-style-type: upper-roman;
+}
+.customord li li {
+    list-style-type: lower-roman;
+}
+.customord li li li {
+    list-style-type: lower-greek;
+}
+#listas .customico {
+    list-style-image: url("../img/Animals_Icon.png");
+}
+
+/*GALLINAS*/
+#listas .customicogallinas {
+    list-style-image: url("../img/White_Chicken.png");
+}
+#listas .customicogallinas1 {
+    list-style-image: url("../img/Brown_Chicken.png");
+}
+#listas .customicogallinas2 {
+    list-style-image: url("../img/Blue_Chicken.png");
+}
+#listas .customicogallinas3 {
+    list-style-image: url("../img/Golden_Chicken.png");
+}
+
+/*CABALLO*/
+.caballos {
+    list-style-image: url("../img/Horse.png");
+}
+
+/*CONEJOS*/
+.conejos {
+    list-style-image: url("../img/Rabbit.png");
+}
+
+#listas .listadefcustom  {
+    width: 30%;
+}
+
+/*PATOS*/
+.patos {
+    list-style-image: url("../img/Duck.png");
+}
+/*VACAS*/
+.vacas {
+    list-style-image: url("../img/White_Cow.png");
+}
+.vaca1 {
+    list-style-image: url("../img/Brown_Cow.png");
+}
+
+/*FRUTAS Y VERDURAS*/
+
+#listas .listadefcustom dt {
+    display: inline;
+    background-color: rgb(250, 242, 189);
+    color: rgb(69, 46, 30);
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.bordredon {
+    border-radius: 15px;
+}
+
+.junimogif {
+    width: 200px;
+    height: auto;
+}
+.tabla1 {
+    border: 1px solid black;
+}
+.sombreado th {
+    background-color: brown;
+    color: white;
+}
+.tablasombreada {
+    border:none;
+}
+.amarilloamarillo tr:nth-child(even) {
+    background-color: red;
+}
+.rojorojo tr:nth-child(odd) {
+    background-color: yellow;
+}
+.horario {
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+.cabecera {
+    background-color: #f0f0f0;
+    color: #297a72;
+}
+.prog {
+    background-color: #64b4ef;
+}
+.bdd {
+    background-color: #81ff81;
+}
+.sisi {
+    background-color: #65aa97;
+}
+.lmsg {
+    background-color: #d2d36d;
+}
+.pimd {
+    background-color: #fec997;
+}
+.ipcg {
+    background-color: #ffa164;
+}
+.sasp {
+    background-color: #28c8c8;
+}
+.dasp {
+    background-color: #ffff63;
+}
+.ipe {
+    background-color: #fe8081;
+}
+.ende {
+    background-color: #c9a0c8;
+}
+/*-----------------FORMULARIOS-------------------------*/
+/*
+.formlogin{
+    width: 30%;
+    float: left;
+}
+.formlogin fieldset{
+    width: 30%;
+    float: left;
+}
+----------------------------------------------------
+.formregister{
+    width: 30%;
+    float: left;
+}
+.formregister fieldset{
+    width: 30%;
+    float: right;
+}
+*/
+.cb {                   /*IMPORTANTE PARA CUANDO TERMINAS DE FLOTAR PARA QUE LO DE DEBAJO NO SE SUBA*/
+    clear: both;
+}
+
+.contenedor-formularios {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.formlogin, .formregister {
+    width: 500px;
+    padding: 20px;
+    background-color: #ffffffa1;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 5px; /* Espacio entre los formularios */
+}
+.formhtml5 {
+    width: 500px;
+    padding: 20px;
+    background-color: #b8f2b58f;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 5px 10px; /* Espacio entre los formularios */
+}
