@@ -199,15 +199,25 @@
         const toggleBtn = document.querySelector('.toggle_btn')
         const toggleBtnIcon = document.querySelector('.toggle_btn i')
         const dropDownMenu = document.querySelector('.dropdown_menu')
+        const mainContent = document.querySelector('main')
 
         toggleBtn.onclick = function () {
             dropDownMenu.classList.toggle('open')
             const isOpen = dropDownMenu.classList.contains('open')
 
+            // Cambiar el icono del botón
             toggleBtnIcon.classList = isOpen
                 ? 'fa-solid fa-xmark'
                 : 'fa-solid fa-bars'
+
+            // Añadir o eliminar la clase que desplaza el contenido
+            if (isOpen) {
+                mainContent.classList.add('main-expanded')
+            } else {
+                mainContent.classList.remove('main-expanded')
+            }
         }
+
     </script>
 </body>
 

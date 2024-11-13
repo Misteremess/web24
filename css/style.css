@@ -714,3 +714,8 @@ ol ol {
     justify-content: center;
     margin-top: 90px;
 }
+
+/* Estilo para cuando el menú está abierto */
+.main-expanded {
+    padding-top: 250px; /* Ajusta este valor según el tamaño de tu menú */
+}
