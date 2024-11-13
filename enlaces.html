@@ -4,93 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>IES Azarquiel</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="container shadow">
+
+    <div class="container">
         <header>
-            <div class="row align-items-center">
-                <div class="col-3"><img src="img/logoiesfseif.png" alt="logo" width="250"></div>
-                <div class="col-9">
-                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
-                    <nav id="menu">
-                        <ul class="text-right">
-                            <li>
-                                <a href="index.html">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="parrafos.html">
-                                    Párrafos
-                                </a>
-                            </li>
-                            <li>
-                                <a href="enlaces.html">
-                                    Enlaces
-                                </a>
-                            </li>
-                            <li>
-                                <a href="listas.html">
-                                    Listas
-                                </a>
-                            </li>
-                            <li>
-                                <a href="tablas.html">
-                                    Tablas
-                                </a>
-                            </li>
-                            <li>
-                                <a href="formularios.html">
-                                    Formularios
-                                </a>
-                            </li>
-                            <li>
-                                <a href="multimedia.html">
-                                    Multimedia
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+            <div class="navbar">
+                <div class="logo"><a href="index.html"><img src="img/logo1.gif" alt="Logo personalizado MAX"></a></div>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="parrafos.html">Parrafos</a></li>
+                    <li><a href="enlaces.html">Enlaces</a></li>
+                    <li><a href="listas.html">Listas</a></li>
+                    <li><a href="tablas.html">Tablas</a></li>
+                    <li><a href="formularios.html">Formularios</a></li>
+                    <li><a href="multimedia.html">Multimedia</a></li>
+                </ul>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
 
-
+            <div class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="parrafos.html">Parrafos</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="tablas.html">Tablas</a></li>
+                <li><a href="formularios.html">Formularios</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+            </div>
         </header>
-        <main class="shadow">
-            <div class="px-3">
-                <h1 class="text-center bg-azul-o text-white py-3">HTML5 & CSS3</h1>
-            </div>
-            <div class="px-3">
-                <hr>
-            </div>
-            <div class="p-3">
-                <div id="enlaces" class="py-3">
-                    <h2 class="text-center">ENLACES</h2>
-                    <p>los enlaces se realizan con la etiqueta <span class="etiqueta">a</span> e indicamos donde viajar
-                        en el atributo <span class="atributo">href</span>.</p>
-                    <h3>Enlace a una pagina nuestra</h3>
-                    <p><a href="index.html">ir a home</a></p>
-                    <h3>Enlace a una pagina de internet</h3>
-                    <p><a href="https://www.google.es">ir a google</a></p>
-                    <h3>Enlace a una pagina de internet desde una imagen</h3>
-                    <p><a href="https://www.renfe.es"><img src="img/renfelogo.png" alt="logo renfe" class="logorenfe"></a></p>
-                    <h3>Enlace a una pagina en una pestaña nueva</h3>
-                    <p><a href="https://www.toledo.es" target="_blank"><img src="img/toledologo.png" alt="logo ayuntamiento Toledo" class="logorenfe"></a></p>
-                </div>
-            </div>
 
+        <main>
+            <section id="enlaces">
+                <div class="text_center">
+                    <h1>ENLACES</h1>
+                </div>
+                <div class="text_center1">
+                    <div id="botoncircle">
+                        <p>Los enlaces se realizan con la etiqueta <span class="etiqueta">a</span> e indicamos donde viajar
+                            en el atributo <span class="atributo">href</span>.</p><br />
+                        <h3>Enlace a una pagina nuestra</h3><br />
+                        <p><a href="index.html" class="boton-enlace">Ir a home</a></p><br />
+                        
+                        <h3>Enlace a una pagina de internet</h3><br />
+                        <p>
+                            Entra a
+                            <a href="https://www.google.es">
+                                Google
+                                <svg viewBox="0 0 70 36">
+                                    <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                                </svg>
+                            </a>
+                            desde aqui.
+                        </p>
+                        
+                        <!-- dribbble - twitter -->
+                        <a class="dribbble" href="https://dribbble.com/ai" target="_blank"><img src="https://cdn.dribbble.com/assets/dribbble-ball-mark-2bd45f09c2fb58dbbfb44766d5d1d07c5a12972d602ef8b32204d28fa3dda554.svg" alt=""></a>
+                        <br />
+
+                        <h3>Enlace para ejecutar un programa javascript.</h3><br />
+                        <p>Si pulsas en <a href="javascript:alert('¿Os he mataoh ya?')" id="botonwave">Tomás</a> le escuchas hablar.</p>
+                        <br />
+                    </div>
+                    <br />
+
+                    <h3>Enlace a una pagina de internet desde una imagen</h3><br />
+                    <p><a href="https://www.purplant.es/"><img src="img/logopurplant.webp" alt="ir a Pur Plant" class="logorenfe"></a>
+                    </p><br />
+                    <h3>Enlace a una pagina en una pestaña nueva</h3><br />
+                    <p><a href="https://verdecora.es/" target="_blank"><img src="img/logoverdecora.jpg"
+                                alt="ir a Verdecora" class="logorenfe"></a></p>
+                </div>
+            </section>
         </main>
+
         <footer>
-            <h1 class="bg-azul-o text-center text-white py-3">&copy; Maximo Du Perez</h1>
+            <div class="footer">
+                <h2>&copy; Máximo Du Pérez</h2>
+            </div>
         </footer>
     </div>
+
     <script>
-        function opendrawer() {
-            document.getElementById('menu').style.display = 'block';
-            document.getElementById('menu').style.witdh = '100%';
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
         }
     </script>
 </body>

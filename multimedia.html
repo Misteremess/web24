@@ -4,111 +4,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>IES Azarquiel</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="container shadow">
+
+    <div class="container">
         <header>
-            <div class="row align-items-center">
-                <div class="col-3"><img src="img/logoiesfseif.png" alt="logo" width="250"></div>
-                <div class="col-9">
-                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
-                    <nav id="menu">
-                        <ul class="text-right">
-                            <li>
-                                <a href="index.html">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="parrafos.html">
-                                    Párrafos
-                                </a>
-                            </li>
-                            <li>
-                                <a href="enlaces.html">
-                                    Enlaces
-                                </a>
-                            </li>
-                            <li>
-                                <a href="listas.html">
-                                    Listas
-                                </a>
-                            </li>
-                            <li>
-                                <a href="tablas.html">
-                                    Tablas
-                                </a>
-                            </li>
-                            <li>
-                                <a href="formularios.html">
-                                    Formularios
-                                </a>
-                            </li>
-                            <li>
-                                <a href="multimedia.html">
-                                    Multimedia
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+            <div class="navbar">
+                <div class="logo"><a href="index.html"><img src="img/logo1.gif" alt="Logo personalizado MAX"></a></div>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="parrafos.html">Parrafos</a></li>
+                    <li><a href="enlaces.html">Enlaces</a></li>
+                    <li><a href="listas.html">Listas</a></li>
+                    <li><a href="tablas.html">Tablas</a></li>
+                    <li><a href="formularios.html">Formularios</a></li>
+                    <li><a href="multimedia.html">Multimedia</a></li>
+                </ul>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
 
-
+            <div class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="parrafos.html">Parrafos</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="tablas.html">Tablas</a></li>
+                <li><a href="formularios.html">Formularios</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+            </div>
         </header>
-        <main class="shadow">
-            <div class="px-3">
-                <h1 class="text-center bg-azul-o text-white py-3">HTML5 & CSS3</h1>
-            </div>
-            <div class="px-3">
-                <hr>
-            </div>
-            <div class="p-3">
-                <div id="multimedia" class="py-3">
-                    <h2 class="text-center">MULTIMEDIAaaaa</h2>
-                    <h3>Galeria</h3>
-                    <div class="col3">
-                        <img src="img/v1.jpg" alt="" width="100%">
-                    </div>
-                    <div class="col3">
-                        <img src="img/v2.jpg" alt="" width="100%">
-                    </div>
-                    <div class="col3">
-                        <img src="img/v3.jpg" alt="" width="100%">
-                    </div>
-                    <div class="col3">
-                        <img src="img/v4.jpg" alt="" width="100%">
-                    </div>
-                    <div class="col3">
-                        <img src="img/v5.jpg" alt="" width="100%">
-                    </div>
-                    <div class="col3">
-                        <img src="img/v6.jpg" alt="" width="100%">
-                    </div>
-                    <div class="cb"></div>
-                    <div class="text-center">
-                        <h3>Video</h3>
-                    </div>
-                    <video src="resources/Villacarrillo.mp4" controls autoplay></video>
-                    <div class="text-center">
-                        <h3>Audio</h3>
-                    </div>
-                    <audio src="resources/Villacarrillo.mp3" controls></audio>
-                </div>
-            </div>
 
+        <main>
+            <section id="parrafos">
+                <div class="text_center">
+                    <h1>MULTIMEDIA</h1>
+                </div>
+                <div class="gallery2pos">
+                    <div class="gallery2">
+                        <span style="--i:1">
+                          <img src="img/carrusel1.jpg" alt="" />
+                        </span>
+                        <span style="--i:2">
+                          <img src="img/carrusel2.jpg" alt="" />
+                        </span>
+                        <span style="--i:3">
+                          <img src="img/carrusel3.jpg" alt="" />
+                        </span>
+                        <span style="--i:4">
+                          <img src="img/carrusel4.jpg" alt="" />
+                        </span>
+                        <span style="--i:5">
+                          <img src="img/carrusel5.jpg" alt="" />
+                        </span>
+                        <span style="--i:6">
+                          <img src="img/carrusel6.jpg" alt="" />
+                        </span>
+                        <span style="--i:7">
+                          <img src="img/carrusel7.jpg" alt="" />
+                        </span>
+                        <span style="--i:8">
+                          <img src="img/carrusel8.jpg" alt="" />
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <video class="video" width="100%" height="auto" autoplay muted loop controls>
+                        <source src="resources/videotoledo.mp4" type="video/mp4">
+                    </video>
+                      
+                </div>
+                <div class="audio-container">
+                    <audio controls>
+                        <source src="resources/audiopresentacion.m4a" type="audio/mp3">
+                      </audio>
+                      
+                </div>
+            </section>
         </main>
+
         <footer>
-            <h1 class="bg-azul-o text-center text-white py-3">&copy; Maximo Du Perez</h1>
+            <div class="footer">
+                <h2>&copy; Máximo Du Pérez</h2>
+            </div>
         </footer>
     </div>
+
     <script>
-        function opendrawer() {
-            document.getElementById('menu').style.display = 'block';
-            document.getElementById('menu').style.witdh = '100%';
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
         }
     </script>
 </body>

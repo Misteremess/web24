@@ -4,265 +4,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>IES Azarquiel</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="container shadow">
+
+    <div class="container">
         <header>
-            <div class="row align-items-center">
-                <div class="col-3"><img src="img/logoiesfseif.png" alt="logo" width="250"></div>
-                <div class="col-9">
-                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
-                    <nav id="menu">
-                        <ul class="text-right">
-                            <li>
-                                <a href="index.html">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="parrafos.html">
-                                    Párrafos
-                                </a>
-                            </li>
-                            <li>
-                                <a href="enlaces.html">
-                                    Enlaces
-                                </a>
-                            </li>
-                            <li>
-                                <a href="listas.html">
-                                    Listas
-                                </a>
-                            </li>
-                            <li>
-                                <a href="tablas.html">
-                                    Tablas
-                                </a>
-                            </li>
-                            <li>
-                                <a href="formularios.html">
-                                    Formularios
-                                </a>
-                            </li>
-                            <li>
-                                <a href="multimedia.html">
-                                    Multimedia
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+            <div class="navbar">
+                <div class="logo"><a href="index.html"><img src="img/logo1.gif" alt="Logo personalizado MAX"></a></div>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="parrafos.html">Parrafos</a></li>
+                    <li><a href="enlaces.html">Enlaces</a></li>
+                    <li><a href="listas.html">Listas</a></li>
+                    <li><a href="tablas.html">Tablas</a></li>
+                    <li><a href="formularios.html">Formularios</a></li>
+                    <li><a href="multimedia.html">Multimedia</a></li>
+                </ul>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
 
-
+            <div class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="parrafos.html">Parrafos</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="tablas.html">Tablas</a></li>
+                <li><a href="formularios.html">Formularios</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+            </div>
         </header>
-        <main class="shadow">
-            <div class="px-3">
-                <h1 class="text-center bg-azul-o text-white py-3">TABLAS</h1>
-            </div>
-            <div class="px-3">
-                <hr>
-            </div>
-            <div>
-                <h3>Tabla con encabezado de fila</h3>
-                <table border="1" class="tabla1">
-                    <tr>
-                        <th>Company</th>
-                        <th>Contact</th>
-                        <th>Country</th>
-                    </tr>
-                    <tr>
-                        <td>Alfreds Futterkiste</td>
-                        <td>Maria Anders</td>
-                        <td>Germany</td>
-                    </tr>
-                    <tr>
-                        <td>Centro comercial Moctezuma</td>
-                        <td>Francisco Chang</td>
-                        <td>Mexico</td>
-                    </tr>
-                </table>
-                <h3>Tabla con encabezado de columna</h3>
-                <table border="1" class="tabla1">
-                    <tr>
-                        <th>Company</th>
-                        <td>Contact</td>
-                        <td>Country</td>
-                    </tr>
-                    <tr>
-                        <th>Alfreds Futterkiste</th>
-                        <td>Maria Anders</td>
-                        <td>Germany</td>
-                    </tr>
-                    <tr>
-                        <th>Centro comercial Moctezuma</th>
-                        <td>Francisco Chang</td>
-                        <td>Mexico</td>
-                    </tr>
-                </table>
-                <h3>Tabla con encabezado de fila y columna</h3>
-                <table border="1" class="sombreado">
-                    <tr>
-                        <th>Company</th>
-                        <th>Contact</th>
-                        <th>Country</th>
-                    </tr>
-                    <tr>
-                        <th>Alfreds Futterkiste</th>
-                        <td>Maria Anders</td>
-                        <td>Germany</td>
-                    </tr>
-                    <tr>
-                        <th>Centro comercial Moctezuma</th>
-                        <td>Francisco Chang</td>
-                        <td>Mexico</td>
-                    </tr>
-                </table>
-                <h3>Tabla de combinacion de filas y columnas</h3>
-                <table border = "1" class="tabla1">
-                    <tr>
-                        <th rowspan="3">expample1</th>
-                        <td>expample1</td>
-                        <td>expample2</td>
-                        <td>expample3</td>
-                    </tr>
-                    <tr>
-                        <td>expample1</td>
-                        <td>expample2</td>
-                        <td>expample3</td>
-                    </tr>
-                    <tr>
-                        <td>expample1</td>
-                        <td>expample2</td>
-                        <td>expample3</td>
 
-                    </tr>
-                    <tr>
-                        <th colspan="4">expample1</th>
-                    </tr>
-                    <tr>
-                        <td>expample1</td>
-                        <td>expample2</td>
-                        <td>expample3</td>
-                        <td>expample4</td>
-                    </tr>
-                    <tr>
-                        <td>expample1</td>
-                        <td>expample2</td>
-                        <td>expample3</td>
-                        <td>expample4</td>
-                    </tr>
-                </table>
-                <h3>Tabla con diseño diferente de filas pares e impares</h3>
-                <table class="tablasombreada rojorojo amarilloamarillo">
-                    <tr>
-                        <td>content1</td>
-                        <td>content2</td>
-                        <td>content3</td>
-                        <td>content4</td>
-                    </tr>
-                    <tr>
-                        <td>content1</td>
-                        <td>content2</td>
-                        <td>content3</td>
-                        <td>content4</td>
-                    </tr>
-                    <tr>
-                        <td>content1</td>
-                        <td>content2</td>
-                        <td>content3</td>
-                        <td>content4</td>
-                    </tr>
-                    <tr>
-                        <td>content1</td>
-                        <td>content2</td>
-                        <td>content3</td>
-                        <td>content4</td>
-                    </tr>
-                    <tr>
-                        <td>content1</td>
-                        <td>content2</td>
-                        <td>content3</td>
-                        <td>content4</td>
-                    </tr>
-                    <tr>
-                        <td>content1</td>
-                        <td>content2</td>
-                        <td>content3</td>
-                        <td>content4</td>
-                    </tr>
-                </table>
-                <table border="1" class="horario">
-                    <tr>
-                        <th colspan="6" class="cabecera">S1DAM</th>
-                    </tr>
-                    <tr>
-                        <th class="cabecera">/~\</th>
-                        <td class="cabecera">Lunes</td>
-                        <td class="cabecera">Martes</td>
-                        <td class="cabecera">Miercoles</td>
-                        <td class="cabecera">Jueves</td>
-                        <td class="cabecera">Viernes</td>
-                    </tr>
-                    <tr>
-                        <th class="cabecera">8:15<br>9:10</th>
-                        <td rowspan="2" class="bdd">BDD<br>León Dí, JuEf<br>(1 B-302)</td>
-                        <td rowspan="2" class="prog">PROG<br>León Dí, JuEf<br>(1 B-302)</td>
-                        <td rowspan="2" class="sisi">SISI<br>Mart Ru, To<br>(1 B-302)</td>
-                        <td class="lmsg">LMSG<br>Puli. Mo, FrJo<br>(1 B-302)</td>
-                        <td class="pimd">PIMD<br>León Dí, JuEf<br>(1 B-302)</td>
-                    </tr>
-                    <tr>
-                        <th class="cabecera">9:10<br>10:05</th>
-                        <td class="ipcg">IPCG<br>Guti Sa, JoÁn<br>(1 B-302)</td>
-                        <td class="ende">ENDE<br>Polo Or, Ed<br>(1 B-302)</td>
-                    </tr>
-                    <tr>
-                        <th class="cabecera">10:05<br>11:00</th>
-                        <td class="sasp">SASP<br>Gall. Cr, Di<br>(1 B-302)</td>
-                        <td class="dasp">DASP<br>Polo Or, Ed<br>(1 B-302)</td>
-                        <td class="ipe">IPE<br>Marín Ca, RoMa<br>(1 B-302)</td>
-                        <td class="bdd">BDD<br>Gall. Cr, Di<br>(1 B-302)</td>
-                        <td class="ipe">IPE<br>Marín Ca, RoMa<br>(1 B-302)</td>
-                    </tr>
-                    <tr>
-                        <th class="cabecera">11:00<br>11:30</th>
-                        <th colspan="5" class="cabecera">recreo</th>
-                    </tr>
-                    <tr>
-                        <th class="cabecera">11:30<br>12:25</th>
-                        <td class="ipe">IPE<br>Marín Ca, RoMa<br>(1 B-302)</td>
-                        <td rowspan="2" class="sisi">SISI<br>Mart Ru, To<br>(1 B-302)</td>
-                        <td rowspan="2" class="lmsg">LMSG<br>Puli. Mo, FrJo<br>(1 B-302)</td>
-                        <td class="bdd">BDD<br>León Dí, JuEf<br>(1 B-302)</td>
-                        <td rowspan="2" class="prog">PROG<br>León Dí, JuEf<br>(1 B-302)</td>
-                    </tr>
-                    <tr>
-                        <th class="cabecera">12:25<br>13:20</th>
-                        <td rowspan="2" class="prog">PROG<br>León Dí, JuEf<br>(1 B-302)</td>
-                        <td class="ende">ENDE<br>Polo Or, Ed<br>(1 B-302)</td>
-                    </tr>
-                    <tr>
-                        <th class="cabecera">13:20<br>14:15</th>
-                        <td class="bdd">BDD<br>León Dí, JuEf<br>(1 B-302)</td>
-                        <td class="ipcg">IPCG<br>Guti Sa, JoÁn<br>(1 B-302)</td>
-                        <td class="sisi">SISI<br>Mart Ru, To<br>(1 B-302)</td>
-                        <td class="dasp">DASP<br>Polo Or, Ed<br>(1 B-302)</td>
-                    </tr>
-                </table>
-            </div>
+        <main>
+            <section id="tablas">
+                <div class="text_center">
+                    <h1>TABLAS</h1>
+                </div>
+                <div>
+                    <div class="float1">
+                        <h3>Tabla con encabezado de fila</h3>
+                        <br />
+                        <table border="1" class="tabla1">
+                            <tr>
+                                <th>Company</th>
+                                <th>Contact</th>
+                                <th>Country</th>
+                            </tr>
+                            <tr>
+                                <td>Alfreds Futterkiste</td>
+                                <td>Maria Anders</td>
+                                <td>Germany</td>
+                            </tr>
+                            <tr>
+                                <td>Centro comercial Moctezuma</td>
+                                <td>Francisco Chang</td>
+                                <td>Mexico</td>
+                            </tr>
+                        </table>
+                        <br />
+                        <h3>Tabla con encabezado de columna</h3>
+                        <br />
+                        <table border="1" class="tabla1">
+                            <tr>
+                                <th>Company</th>
+                                <td>Contact</td>
+                                <td>Country</td>
+                            </tr>
+                            <tr>
+                                <th>Alfreds Futterkiste</th>
+                                <td>Maria Anders</td>
+                                <td>Germany</td>
+                            </tr>
+                            <tr>
+                                <th>Centro comercial Moctezuma</th>
+                                <td>Francisco Chang</td>
+                                <td>Mexico</td>
+                            </tr>
+                        </table>
+                        <br />
+                        <h3>Tabla con encabezado de fila y columna</h3>
+                        <br />
+                        <table border="1" class="sombreado">
+                            <tr>
+                                <th>Company</th>
+                                <th>Contact</th>
+                                <th>Country</th>
+                            </tr>
+                            <tr>
+                                <th>Alfreds Futterkiste</th>
+                                <td>Maria Anders</td>
+                                <td>Germany</td>
+                            </tr>
+                            <tr>
+                                <th>Centro comercial Moctezuma</th>
+                                <td>Francisco Chang</td>
+                                <td>Mexico</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="float2">
+                        <h3>Tabla de combinacion de filas y columnas</h3>
+                        <br />
+                        <table border = "1" class="tabla1">
+                            <tr>
+                                <th rowspan="3">expample1</th>
+                                <td>expample1</td>
+                                <td>expample2</td>
+                                <td>expample3</td>
+                            </tr>
+                            <tr>
+                                <td>expample1</td>
+                                <td>expample2</td>
+                                <td>expample3</td>
+                            </tr>
+                            <tr>
+                                <td>expample1</td>
+                                <td>expample2</td>
+                                <td>expample3</td>
+        
+                            </tr>
+                            <tr>
+                                <th colspan="4">expample1</th>
+                            </tr>
+                            <tr>
+                                <td>expample1</td>
+                                <td>expample2</td>
+                                <td>expample3</td>
+                                <td>expample4</td>
+                            </tr>
+                            <tr>
+                                <td>expample1</td>
+                                <td>expample2</td>
+                                <td>expample3</td>
+                                <td>expample4</td>
+                            </tr>
+                        </table>
+                        <br />
+                        <h3>Tabla con diseño diferente de filas pares e impares</h3>
+                        <br />
+                        <table class="tablasombreada rojorojo amarilloamarillo">
+                            <tr>
+                                <td>content1</td>
+                                <td>content2</td>
+                                <td>content3</td>
+                                <td>content4</td>
+                            </tr>
+                            <tr>
+                                <td>content1</td>
+                                <td>content2</td>
+                                <td>content3</td>
+                                <td>content4</td>
+                            </tr>
+                            <tr>
+                                <td>content1</td>
+                                <td>content2</td>
+                                <td>content3</td>
+                                <td>content4</td>
+                            </tr>
+                            <tr>
+                                <td>content1</td>
+                                <td>content2</td>
+                                <td>content3</td>
+                                <td>content4</td>
+                            </tr>
+                            <tr>
+                                <td>content1</td>
+                                <td>content2</td>
+                                <td>content3</td>
+                                <td>content4</td>
+                            </tr>
+                            <tr>
+                                <td>content1</td>
+                                <td>content2</td>
+                                <td>content3</td>
+                                <td>content4</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="cb"></div>
+                    <div class="cajahorario">
+                        <table border="1" class="horario">
+                            <tr>
+                                <th colspan="6" class="cabecera italic">S1DAM</th>
+                            </tr>
+                            <tr>
+                                <th class="cabecera">/~\</th>
+                                <td class="cabecera">Lunes</td>
+                                <td class="cabecera">Martes</td>
+                                <td class="cabecera">Miercoles</td>
+                                <td class="cabecera">Jueves</td>
+                                <td class="cabecera">Viernes</td>
+                            </tr>
+                            <tr>
+                                <th class="cabecera">8:15<br>9:10</th>
+                                <td rowspan="2" class="bdd">BDD<br>León Dí, JuEf<br>(1 B-302)</td>
+                                <td rowspan="2" class="prog">PROG<br>León Dí, JuEf<br>(1 B-302)</td>
+                                <td rowspan="2" class="sisi">SISI<br>Mart Ru, To<br>(1 B-302)</td>
+                                <td class="lmsg">LMSG<br>Puli. Mo, FrJo<br>(1 B-302)</td>
+                                <td class="pimd">PIMD<br>León Dí, JuEf<br>(1 B-302)</td>
+                            </tr>
+                            <tr>
+                                <th class="cabecera">9:10<br>10:05</th>
+                                <td class="ipcg">IPCG<br>Guti Sa, JoÁn<br>(1 B-302)</td>
+                                <td class="ende">ENDE<br>Polo Or, Ed<br>(1 B-302)</td>
+                            </tr>
+                            <tr>
+                                <th class="cabecera">10:05<br>11:00</th>
+                                <td class="sasp">SASP<br>Gall. Cr, Di<br>(1 B-302)</td>
+                                <td class="dasp">DASP<br>Polo Or, Ed<br>(1 B-302)</td>
+                                <td class="ipe">IPE<br>Marín Ca, RoMa<br>(1 B-302)</td>
+                                <td class="bdd">BDD<br>Gall. Cr, Di<br>(1 B-302)</td>
+                                <td class="ipe">IPE<br>Marín Ca, RoMa<br>(1 B-302)</td>
+                            </tr>
+                            <tr>
+                                <th class="cabecera">11:00<br>11:30</th>
+                                <th colspan="5" class="cabecera">recreo</th>
+                            </tr>
+                            <tr>
+                                <th class="cabecera">11:30<br>12:25</th>
+                                <td class="ipe">IPE<br>Marín Ca, RoMa<br>(1 B-302)</td>
+                                <td rowspan="2" class="sisi">SISI<br>Mart Ru, To<br>(1 B-302)</td>
+                                <td rowspan="2" class="lmsg">LMSG<br>Puli. Mo, FrJo<br>(1 B-302)</td>
+                                <td class="bdd">BDD<br>León Dí, JuEf<br>(1 B-302)</td>
+                                <td rowspan="2" class="prog">PROG<br>León Dí, JuEf<br>(1 B-302)</td>
+                            </tr>
+                            <tr>
+                                <th class="cabecera">12:25<br>13:20</th>
+                                <td rowspan="2" class="prog">PROG<br>León Dí, JuEf<br>(1 B-302)</td>
+                                <td class="ende">ENDE<br>Polo Or, Ed<br>(1 B-302)</td>
+                            </tr>
+                            <tr>
+                                <th class="cabecera">13:20<br>14:15</th>
+                                <td class="bdd">BDD<br>León Dí, JuEf<br>(1 B-302)</td>
+                                <td class="ipcg">IPCG<br>Guti Sa, JoÁn<br>(1 B-302)</td>
+                                <td class="sisi">SISI<br>Mart Ru, To<br>(1 B-302)</td>
+                                <td class="dasp">DASP<br>Polo Or, Ed<br>(1 B-302)</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
         </main>
+
         <footer>
-            <h1 class="bg-azul-o text-center text-white py-3">&copy; Maximo Du Perez</h1>
+            <div class="footer">
+                <h2>&copy; Máximo Du Pérez</h2>
+            </div>
         </footer>
     </div>
+
     <script>
-        function opendrawer() {
-            document.getElementById('menu').style.display = 'block';
-            document.getElementById('menu').style.witdh = '100%';
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
         }
     </script>
 </body>

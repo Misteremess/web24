@@ -4,71 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>IES Azarquiel</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="container shadow">
+
+    <div class="container">
         <header>
-            <div class="row align-items-center">
-                <div class="col-3"><img src="img/logoiesfseif.png" alt="logo" width="250"></div>
-                <div class="col-9">
-                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
-                    <nav id="menu">
-                        <ul class="text-right">
-                            <li>
-                                <a href="index.html">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="parrafos.html">
-                                    Párrafos
-                                </a>
-                            </li>
-                            <li>
-                                <a href="enlaces.html">
-                                    Enlaces
-                                </a>
-                            </li>
-                            <li>
-                                <a href="listas.html">
-                                    Listas
-                                </a>
-                            </li>
-                            <li>
-                                <a href="tablas.html">
-                                    Tablas
-                                </a>
-                            </li>
-                            <li>
-                                <a href="formularios.html">
-                                    Formularios
-                                </a>
-                            </li>
-                            <li>
-                                <a href="multimedia.html">
-                                    Multimedia
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+            <div class="navbar">
+                <div class="logo"><a href="index.html"><img src="img/logo1.gif" alt="Logo personalizado MAX"></a></div>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="parrafos.html">Parrafos</a></li>
+                    <li><a href="enlaces.html">Enlaces</a></li>
+                    <li><a href="listas.html">Listas</a></li>
+                    <li><a href="tablas.html">Tablas</a></li>
+                    <li><a href="formularios.html">Formularios</a></li>
+                    <li><a href="multimedia.html">Multimedia</a></li>
+                </ul>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
 
-
+            <div class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="parrafos.html">Parrafos</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="tablas.html">Tablas</a></li>
+                <li><a href="formularios.html">Formularios</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+            </div>
         </header>
-        <main class="shadow">
-            <div class="px-3">
-                <h1 class="text-center bg-azul-o text-white py-3 bordredon">LISTAS</h1>
-            </div>
-            <div class="px-3">
-                <hr>
-            </div>
-            <div class="p-3">
-                <div id="listas" class="py-3">
-                    <img class="junimogif" src="img/dancingjunimo.gif" alt="Dancing Junimo">
+
+        <main>
+            <section id="listas">
+                <div class="text_center">
+                    <h1>LISTAS</h1>
+                </div>
+                <div id="" class="unset">
                     <h3>Lista desordenada</h3>
                     <ul>
                         <li>Item 1</li>
@@ -76,6 +55,7 @@
                         <li>Item 3</li>
                         <li>Item 4</li>
                     </ul>
+                    <br />
                     <h3>Lista ordenada</h3>
                     <ol>
                         <li>Item 1</li>
@@ -83,6 +63,7 @@
                         <li>Item 3</li>
                         <li>Item 4</li>
                     </ol>
+                    <br />
                     <h3>Lista de varios niveles desordenada</h3>
                     <ul>
                         <li>Level 1
@@ -104,6 +85,7 @@
                             </ul>
                         </li>
                     </ul>
+                    <br />
                     <h3>Lista de varios niveles ordenada</h3>
                     <ol>
                         <li>Level 1
@@ -125,6 +107,7 @@
                             </ol>
                         </li>
                     </ol>
+                    <br />
                     <h3>Lista de varios niveles desordenada customizada</h3>
                     <ul class="customdes">
                         <li>Level 1
@@ -148,6 +131,7 @@
                             </ul>
                         </li>
                     </ul>
+                    <br />
                     <h3>Lista de varios niveles ordenada customizada</h3>
                     <ol class="customord">
                         <li>Level 1
@@ -171,59 +155,58 @@
                             </ol>
                         </li>
                     </ol>
+                    <br />
                     <h3>Lista de varios niveles desordenada con iconos</h3>
                     <ul>
-                        <li class="customico">Animales
-                            <ul>
-                                <li class="customicogallinas"><h4>Gallinas</h4>
-                                    <ul>
-                                        <li class="customicogallinas">Gallina</li>
-                                        <li class="customicogallinas1">Gallina marron</li>
-                                        <li class="customicogallinas2">Gallina azul</li>
-                                        <li class="customicogallinas3">Gallina dorada</li>
-                                    </ul>
-                                </li>
-                                <li class="caballos"><h4>Caballos</h4></li>
-                                <li class="conejos"><h4>Conejos</h4></li>
-                                <li class="patos"><h4>Pato</h4></li>
-                                <li class="vacas"><h4>Vacas</h4>
-                                    <ul>
-                                        <li class="vacas">Vaca</li>
-                                        <li class="vaca1">Vaca marron</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                        <h4>Plantas tropicales</h4>
+                        <ul>
+                            <li class="customima">Calathea White Fusion</li>
+                            <li class="customima">Calathea Tassmania</li>
+                        </ul>
+                        <h4>Plantas deserticas</h4>
+                        <ul>
+                            <li class="customima">Cactus Gymnocalycium Japan Pink</li>
+                            <li class="customima">Cactus Cereus Forbesii</li>
+                        </ul>
                     </ul>
+                    <br />
                     <h3>Lista de definicion</h3>
                     <dl class="listadefcustom">
-                        <img src="img/Parsnip.png" alt="Chirivia">
-                        <dt class="chirivia"> Chirivia</dt>
+                        <dt class="fondo-blanco"> Chirivia</dt>
                         <dd>Un tubérculo de primavera primo hermano de la zanahoria. Tiene un sabor silvestre y está
                             lleno de nutrientes.
                         </dd>
-                        <img src="img/Carrot.png" alt="Zanahoria">
-                        <dt class="zanahoria">Zanahoria</dt>
+                        <dt class="fondo-blanco">Zanahoria</dt>
                         <dd>Un colorido tubérculo de rápido crecimiento. Es un buen aperitivo.</dd>
-                        <img src="img/Strawberry.png" alt="Fresa">
-                        <dt>Fresa</dt>
+                        <dt class="fondo-blanco">Fresa</dt>
                         <dd>Una fruta dulce, jugosa y de atractivo color rojo, muy apreciada.
                             Sigue produciendo después de madurar. Cuando se cosecha, cada planta de fresa produce 1
                             fresa cada 4 días, con una probabilidad pequeña de más fresas.
                         </dd>
                     </dl>
                 </div>
-            </div>
-
+            </section>
         </main>
+
         <footer>
-            <h1 class="bg-azul-o text-center text-white py-3">&copy; Maximo Du Perez</h1>
+            <div class="footer">
+                <h2>&copy; Máximo Du Pérez</h2>
+            </div>
         </footer>
     </div>
+
     <script>
-        function opendrawer() {
-            document.getElementById('menu').style.display = 'block';
-            document.getElementById('menu').style.witdh = '100%';
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
         }
     </script>
 </body>

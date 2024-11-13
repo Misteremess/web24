@@ -4,182 +4,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso HTML5-CSS3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>IES Azarquiel</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="container shadow">
+
+    <div class="container">
         <header>
-            <div class="row align-items-center">
-                <div class="col-3"><img src="img/logoiesfseif.png" alt="logo" width="250"></div>
-                <div class="col-9">
-                    <span id="btnmenu" onclick="opendrawer()">&#9776;</span>
-                    <nav id="menu">
-                        <ul class="text-right">
-                            <li>
-                                <a href="index.html">
-                                    Home
-                                </a>
-                            </li>
-                            <li>
-                                <a href="parrafos.html">
-                                    Párrafos
-                                </a>
-                            </li>
-                            <li>
-                                <a href="enlaces.html">
-                                    Enlaces
-                                </a>
-                            </li>
-                            <li>
-                                <a href="listas.html">
-                                    Listas
-                                </a>
-                            </li>
-                            <li>
-                                <a href="tablas.html">
-                                    Tablas
-                                </a>
-                            </li>
-                            <li>
-                                <a href="formularios.html">
-                                    Formularios
-                                </a>
-                            </li>
-                            <li>
-                                <a href="multimedia.html">
-                                    Multimedia
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+            <div class="navbar">
+                <div class="logo"><a href="index.html"><img src="img/logo1.gif" alt="Logo personalizado MAX"></a></div>
+                <ul class="links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="parrafos.html">Parrafos</a></li>
+                    <li><a href="enlaces.html">Enlaces</a></li>
+                    <li><a href="listas.html">Listas</a></li>
+                    <li><a href="tablas.html">Tablas</a></li>
+                    <li><a href="formularios.html">Formularios</a></li>
+                    <li><a href="multimedia.html">Multimedia</a></li>
+                </ul>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
 
-
+            <div class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="parrafos.html">Parrafos</a></li>
+                <li><a href="enlaces.html">Enlaces</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="tablas.html">Tablas</a></li>
+                <li><a href="formularios.html">Formularios</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+            </div>
         </header>
-        <main class="shadow">
-            <div class="px-3">
-                <h1 class="text-center bg-azul-o text-white py-3">FORMULARIOS</h1>
-            </div>
-            <div class="px-3">
-                <hr>
-            </div>
-            <div class="contenedor-formularios">
-                <form action="#" method="get" class="formlogin">
-                    <fieldset>
-                        <legend>Login</legend>
-                        <p><label for=""></label>
-                            <input type="text" name="user" id="" placeholder="User">
-                        </p>
-                        <p><label for=""></label>
-                            <input type="password" name="pass" id="" placeholder="Password">
-                        </p>
-                        <p>
-                            <input type="submit" value="Enviar">
-                        </p>
 
-                    </fieldset>
-                </form>
-                <form action="namepass.txt" method="get" class="formregister">
-                    <fieldset>
-                        <legend>Registro</legend>
-                        <p><label for="">Input type text</label>
-                            <input type="text" name="user" id="">
-                        </p>
-                        <p><label for="">Input type password</label>
-                            <input type="password" name="pass" id="">
-                        </p>
-                        </p>
-                        <p><label for="">Provincia</label>
-                            <select name="provincia" id="">
-                                <option value="1">Toledo</option>
-                                <option value="2">Cuenca</option>
-                                <option value="3">Guadalajara</option>
-                                <option value="4">Ciudad Real</option>
-                                <option value="5">Albacete</option>
-                            </select>
-                        </p>
-                        <p><label for="">Aficiones:</label> <br />
-                            <input type="checkbox" name="Cine" id=""> Cine <br />
-                            <input type="checkbox" name="Cine" id=""> Tenis <br />
-                            <input type="checkbox" name="Cine" id=""> Musica <br />
-                            <input type="checkbox" name="Cine" id=""> Fiesta <br />
-                            <input type="checkbox" name="Cine" id=""> Videojuegos <br />
-                            <input type="checkbox" name="Cine" id=""> Dormir <br />
-                        </p>
-                        <p><label for="">Sexo:</label> <br />
-                            <input type="radio" name="Sexo" id=""> Hombre <br />
-                            <input type="radio" name="Sexo" id=""> Mujer <br />
-                            <input type="radio" name="Sexo" id=""> No especificado <br />
-                        </p>
-                        <p><label for="">Comentarios:</label>
-                            <textarea name="comment" id="" cols="55" rows="7"></textarea>
-                        </p>
-                        <p><input type="submit" value="Enviar">
-
-                    </fieldset>
-                </form>
-                <form action="#" method="get" class="formhtml5">
-                    <fieldset>
-                        <legend>Formularios nuevos de HTML5</legend>
-                        <p><label for="">Color:</label>
-                            <input type="color">
-                        </p>
-                        <p><label for="">Date:</label>
-                            <input type="date">
-                        </p>
-                        <p><label for="">Date time:</label>
-                            <input type="datetime">
-                        </p>
-                        <p><label for="">Date time local:</label>
-                            <input type="datetime-local">
-                        </p>
-                        <p><label for="">E-mail:</label>
-                            <input type="email">
-                        </p>
-                        <p><label for="">Documents:</label>
-                            <input type="file">
-                        </p>
-                        <p><label for="">Image:</label>
-                            <input type="image" src="img/White_Cow.png">
-                        </p>
-                        <p><label for="">Month:</label>
-                            <input type="month">
-                        </p>
-                        <p><label for="">Number:</label>
-                            <input type="number">
-                        </p>
-                        <p><label for="">Range:</label>
-                            <input type="range">
-                        </p>
-                        <p><label for="">Phone number:</label>
-                            <input type="tel">
-                        </p>
-                        <p><label for="">Time:</label>
-                            <input type="time">
-                        </p>
-                        <p><label for="">Web page:</label>
-                            <input type="url">
-                        </p>
-                        <p><label for="">Week:</label>
-                            <input type="week">
-                        </p>
-                    </fieldset>
-                </form>
-                <div class="cb"></div>
-            </div>
-
+        <main>
+            <section id="formularios">
+                <div class="text_center">
+                    <h1>FORMULARIOS</h1>
+                </div>
+                <div class="contenedor-formularios">
+                    <form action="#" method="get" class="formlogin">
+                        <fieldset>
+                            <legend>Login</legend>
+                            <div class="formcontentspc">
+                                <p><label for=""></label>
+                                    <input type="text" name="user" id="" placeholder="User">
+                                </p>
+                                <p><label for=""></label>
+                                    <input type="password" name="pass" id="" placeholder="Password">
+                                </p>
+                                <p>
+                                    <input type="submit" value="Enviar">
+                                </p>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <form action="namepass.txt" method="get" class="formregister">
+                        <fieldset>
+                            <legend>Registro</legend>
+                            <div class="formcontentspc">
+                                <p><label for="">Input type text</label>
+                                    <input type="text" name="user" id="">
+                                </p>
+                                <p><label for="">Input type password</label>
+                                    <input type="password" name="pass" id="">
+                                </p>
+                                </p>
+                                <p><label for="">Provincia</label>
+                                    <select name="provincia" id="">
+                                        <option value="1">Toledo</option>
+                                        <option value="2">Cuenca</option>
+                                        <option value="3">Guadalajara</option>
+                                        <option value="4">Ciudad Real</option>
+                                        <option value="5">Albacete</option>
+                                    </select>
+                                </p>
+                                <p><label for="">Aficiones:</label> <br />
+                                    <input type="checkbox" name="Cine" id=""> Cine <br />
+                                    <input type="checkbox" name="Cine" id=""> Tenis <br />
+                                    <input type="checkbox" name="Cine" id=""> Musica <br />
+                                    <input type="checkbox" name="Cine" id=""> Fiesta <br />
+                                    <input type="checkbox" name="Cine" id=""> Videojuegos <br />
+                                    <input type="checkbox" name="Cine" id=""> Dormir <br />
+                                </p>
+                                <p><label for="">Sexo:</label> <br />
+                                    <input type="radio" name="Sexo" id=""> Hombre <br />
+                                    <input type="radio" name="Sexo" id=""> Mujer <br />
+                                    <input type="radio" name="Sexo" id=""> No especificado <br />
+                                </p>
+                                <p><label for="">Comentarios:</label>
+                                    <textarea name="comment" id="" cols="55" rows="7"></textarea>
+                                </p>
+                                <p><input type="submit" value="Enviar">
+                            </div>
+                        </fieldset>
+                    </form>
+                    <form action="#" method="get" class="formregister">
+                        <fieldset>
+                            <legend>Formularios nuevos de HTML5</legend>
+                            <div class="formcontentspc">
+                                <p><label for="">Color:</label>
+                                    <input type="color">
+                                </p>
+                                <p><label for="">Date:</label>
+                                    <input type="date">
+                                </p>
+                                <p><label for="">Date time:</label>
+                                    <input type="datetime">
+                                </p>
+                                <p><label for="">Date time local:</label>
+                                    <input type="datetime-local">
+                                </p>
+                                <p><label for="">E-mail:</label>
+                                    <input type="email">
+                                </p>
+                                <p><label for="">Documents:</label>
+                                    <input type="file">
+                                </p>
+                                <p><label for="">Image:</label>
+                                    <input type="image" src="img/hoja.png">
+                                </p>
+                                <p><label for="">Month:</label>
+                                    <input type="month">
+                                </p>
+                                <p><label for="">Number:</label>
+                                    <input type="number">
+                                </p>
+                                <p><label for="">Range:</label>
+                                    <input type="range">
+                                </p>
+                                <p><label for="">Phone number:</label>
+                                    <input type="tel">
+                                </p>
+                                <p><label for="">Time:</label>
+                                    <input type="time">
+                                </p>
+                                <p><label for="">Web page:</label>
+                                    <input type="url">
+                                </p>
+                                <p><label for="">Week:</label>
+                                    <input type="week">
+                                </p>
+                            </div>
+                        </fieldset>
+                    </form>
+                    <div class="cb"></div>
+                </div>
+            </section>
         </main>
+
         <footer>
-            <h1 class="bg-azul-o text-center text-white py-3">&copy; Maximo Du Perez</h1>
+            <div class="footer">
+                <h2>&copy; Máximo Du Pérez</h2>
+            </div>
         </footer>
     </div>
+
     <script>
-        function opendrawer() {
-            document.getElementById('menu').style.display = 'block';
-            document.getElementById('menu').style.witdh = '100%';
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
         }
     </script>
 </body>
